@@ -4,7 +4,7 @@ import numpy as np
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-qa_df = pd.read_csv('model/qa_data.csv')
+qa_df = pd.read_csv('./model/qa_data.csv')
 questions = qa_df['q2'].tolist()
 answers = qa_df['q1'].tolist()
 

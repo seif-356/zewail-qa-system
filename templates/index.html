@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zewail City QA</title>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        input, button { font-size: 18px; padding: 10px; margin-top: 10px; width: 100%; }
+        .result { margin-top: 20px; font-size: 20px; color: green; }
+    </style>
+</head>
+<body>
+    <h2>Ask Zewail City Admissions</h2>
+    <form method="post">
+        <input name="question" type="text" placeholder="Type your question here..." required>
+        <button type="submit">Ask</button>
+    </form>
+    {% if answer %}
+    <div class="result">
+        <strong>Answer:</strong> {{ answer }}
+    </div>
+    {% endif %}
+</body>
+</html>
